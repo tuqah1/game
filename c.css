@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:400,500,700");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+header {
+  background-color: white;
+  padding: 20px;
+}
+header > h1 {
+  color: black;
+  text-align: center;
+  font-family: Asap sans-serif;
+}
+.score-board {
+  border: 3px solid white;
+  margin: 20px auto;
+  width: 200px;
+  padding: 15px 20px;
+  color: white;
+  font-family: asap sans-serif;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 35px;
+  position: relative;
+}
+.badge {
+  background-color: tomato;
+  padding: 2px 7px;
+  font-size: 14px;
+  font-family: Asap sans-serif;
+  color: white;
+}
+#user {
+  position: absolute;
+  top: 30px;
+  left: -25px;
+}
+#comp {
+  position: absolute;
+  top: 30px;
+  right: -25px;
+}
+.result {
+  font-size: 30px;
+  color: white;
+}
+.result > p {
+  text-align: center;
+  font-family: asap sans-serif;
+  font-weight: bold;
+}
+.choices {
+  text-align: center;
+  margin-top: 50px;
+}
+.choice {
+  display: inline-block;
+  margin: 0px 20px;
+  border: 4px solid white;
+  border-radius: 50%;
+  padding: 25px;
+  transition: all 0.3s ease;
+}
+.choice img {
+  border-radius: 50%;
+}
+.choice:hover {
+  cursor: pointer;
+  background-color: firebrick;
+}
+.action-message {
+  text-align: center;
+  font-weight: bold;
+  font-family: asep sans-serif;
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.green-glow {
+  border: 4px solid rgb(56, 226, 56);
+  box-shadow: 0 0 10px rgb(45, 183, 45);
+}
+.red-glow {
+  border: 4px solid rgb(178, 36, 36);
+  box-shadow: 0 0 10px rgb(183, 45, 45);
+}
+.yelo-glow {
+  border: 4px solid rgb(36, 112, 200);
+  box-shadow: 0 0 10px rgb(34, 89, 218);
+}

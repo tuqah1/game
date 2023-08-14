@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>my game</title>
+    <link rel="stylesheet" href="c.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="h1">Rock Paper Scissors</h1>
+    </header>
+    <div class="score-board">
+      <div class="badge" id="user">User</div>
+      <div class="badge" id="comp">Comp</div>
+      <span id="user-score">0</span>:<span id="computer-score">0</span>
+    </div>
+    <div class="result">
+      <p>Paper convers Rock. You win!</p>
+    </div>
+    <div class="choices">
+      <div class="choice" id="r">
+        <img
+          width="200"
+          src="https://nationaltoday.com/wp-content/uploads/2021/08/National-Pet-Rock-Day.jpg"
+          alt=""
+        />
+      </div>
+      <div class="choice" id="p">
+        <img
+          src="data:image/png;base64,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"
+          alt=""
+        />
+      </div>
+      <div class="choice" id="s">
+        <img
+          width="200"
+          src="https://d3bzyjrsc4233l.cloudfront.net/company_office/rps.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <p class="action-message">Make Your Move.</p>
+
+     <script src="main.js"></script>
+  </body>
+</html>
